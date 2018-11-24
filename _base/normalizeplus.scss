@@ -35,7 +35,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 body {
   margin: 0;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.15;
   color: $b-primary;
   font-size: $default-font-size;
   text-align: left;
@@ -181,6 +181,7 @@ summary,
 textarea {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
+  text-transform: none;
 }
 
 table {

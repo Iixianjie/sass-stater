@@ -27,8 +27,13 @@
   display: block;
 }
 
-.over-hide {
+.overflow-hide {
   overflow:hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* 浮动 */
