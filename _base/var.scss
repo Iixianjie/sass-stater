@@ -5,12 +5,11 @@ $reality-width: 750;
 //rem转换尺寸
 $baseFontSize: $reality-width / 10;
 //栅格默认列数
-$col-num:24;
+$col-num: 24;
 //栅格容器宽度
-$container-width:1024px;
+$container-width: 1024px;
 //列宽
 $col-one-width: 100% / $col-num;
-
 
 /* 尺寸 */
 // ========================================================================
@@ -21,14 +20,9 @@ $space-m: 16px;
 $space-lg: 24px;
 $space-big: 32px;
 
-//边框
-$border-color: $b-border;
 
 //默认圆角半径
 $default-border-radius: 4px;
-
-//默认元素阴影
-$default-box-shadow: 0 2px 8px $b-border;
 
 
 /* 文字 */
@@ -41,7 +35,6 @@ $default-box-shadow: 0 2px 8px $b-border;
 // $font-size-big: 30px;    //特大字体
 // $font-size-lg: 20px;    //标题
 
-
 // PC
 $font-size-s: 12px;
 $default-font-size: 14px;
@@ -50,18 +43,17 @@ $font-size-lg: 20px;
 $font-size-big: 30px;
 $font-size-t: 46px;
 
-
 //默认字体
-$font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family: 'Chinese Quote', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue',
+  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
 $code-family: Consolas, Menlo, Courier, monospace;
 $number-family: tabular-nums;
 
-
 /* 动画 */
 // ========================================================================
-$default-transtion: .3s;
-
-
+$default-transtion: 0.3s;
 
 /* z-index */
 // ========================================================================
@@ -70,25 +62,23 @@ $z-index-drawer: 1200;
 $z-index-modal: 1400;
 $z-index-tooltip: 1600;
 
-
 /* 颜色 */
 // ========================================================================
 
 // 中性色
-$b-title: rgba(0,0,0,0.9);    // Title
-$b-primary: rgba(0,0,0,0.75);    // 主要文本色
-$b-second: rgba(0,0,0,0.45);    // 次要文本色
-$b-disable: rgba(0,0,0,0.25);    // 禁用
-$b-border: rgba(0,0,0,0.15);    // 边框/分割线
-$b-bg: rgba(0,0,0,0.04);    // 背景色
+$b-title: rgba(0, 0, 0, 0.9); // Title
+$b-primary: rgba(0, 0, 0, 0.75); // 主要文本色
+$b-second: rgba(0, 0, 0, 0.45); // 次要文本色
+$b-disable: rgba(0, 0, 0, 0.25); // 禁用
+$b-border: rgba(0, 0, 0, 0.15); // 边框/分割线
+$b-bg: rgba(0, 0, 0, 0.04); // 背景色
 
-$w-title: rgba(255,255,255,1);
-$w-primary: rgba(255,255,255,.85);
-$w-second: rgba(255,255,255,.65);
-$w-disable: rgba(255,255,255,.45);
-$w-border: rgba(255,255,255,.25);
-$w-bg: rgba(255,255,255,.09);
-
+$w-title: rgba(255, 255, 255, 1);
+$w-primary: rgba(255, 255, 255, 0.85);
+$w-second: rgba(255, 255, 255, 0.65);
+$w-disable: rgba(255, 255, 255, 0.45);
+$w-border: rgba(255, 255, 255, 0.25);
+$w-bg: rgba(255, 255, 255, 0.09);
 
 //暗提示色
 $color-tips: $b-disable;
@@ -96,13 +86,13 @@ $color-tips: $b-disable;
 $color-mask: $b-disable;
 
 //信息
-$color-info: #2E88FA;
+$color-info: #2e88fa;
 //成功
-$color-success: #13CE66;
+$color-success: #13ce66;
 //错误
-$color-error: #FF4949;
+$color-error: #ff4949;
 //警示
-$color-warn: #FFC82C;
+$color-warn: #ffc82c;
 
 //a连接默认色
 $a-color: $geekblue-6;
@@ -119,3 +109,9 @@ $body-background: $b-bg;
 //默认placeholder颜色
 $default-input-placeholder-color: $b-second;
 
+//边框
+$border-color: $b-border;
+
+//默认元素阴影
+$default-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+  0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);

@@ -1,0 +1,139 @@
+//基础类
+.btn {
+  position: relative;
+  appearance: none;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: none;
+  transition: 0.15s ease-in-out;
+  padding: 6px 16px;
+  font-size: 1em;
+  line-height: 1.5;
+  border-radius: 4px;
+  cursor: pointer;
+  color: $b-primary;
+  background-color: #fff;
+  @extend .shadow-1;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:not(:disabled):not(.disabled):hover {
+    border-color: transparent;
+    @extend .shadow-2;
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+  }
+
+  &.disabled,
+  &:disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    background-color: $b-disable;
+    color: #fff;
+    border-color: transparent;
+  }
+
+  & + & {
+    margin-left: 8px;
+  }
+
+  &.__lg {
+    padding: 8px 32px;
+  }
+
+  &.__sm {
+    padding: 2px 8px;
+  }
+
+  &.__block {
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    padding: 8px 0;
+
+    &.__lg {
+      padding: 10px 0;
+      font-size: 1.2em;
+    }
+
+    &.__sm {
+      padding: 6px 0;
+      font-size: 0.9em;
+    }
+
+    & + & {
+      margin-top: 16px;
+      margin-left: 0;
+    }
+  }
+
+  &.__circle {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 42px;
+    padding: 0;
+    font-weight: 600;
+    border-radius: 50%;
+
+    &.__sm {
+      width: 40px;
+      height: 40px;
+      line-height: 36px;
+    } 
+  }
+}
+
+/**
+  * 生成按钮
+  * $name: 主题名
+  * $main-color: 主色
+  * $hover-color: 交互色
+  */
+@mixin btn($name, $main-color, $hover-color) {
+  .btn.__#{$name} {
+    color: #fff;
+    background-color: $main-color;
+
+    &:not(:disabled):not(.disabled):hover {
+      background-color: $hover-color;
+    }
+
+    .waves-ripple {
+      background-color: rgba(255, 255, 255, 0.45);
+    }
+  }
+  
+  //边框按钮
+  .btn.__#{$name}-outline {
+    color: $main-color;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid $main-color;
+
+    &:not(:disabled):not(.disabled):hover {
+      color: #fff;
+      background-color: $main-color !important;
+      border: 1px solid transparent;
+    }
+
+    .waves-ripple {
+      background-color: rgba(255, 255, 255, 0.45);
+    }
+  }
+}
+
+@include btn(info, #2e88fa, rgba(46, 134, 250, 0.7));
+@include btn(success, #13ce66, rgba(19, 206, 103, 0.7));
+@include btn(denger, #ff4949, rgba(255, 73, 73, 0.7));
+@include btn(waring, #ffc82c, rgba(255, 199, 44, 0.7));

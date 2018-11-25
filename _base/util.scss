@@ -19,18 +19,7 @@
     border-radius: $radius;
   }
 }
-button {
-  @include active-bg;
-}
 
-//圆角半径
-@mixin border-radius($radius: $default-border-radius) {
-  border-radius: $radius;
-}
-//阴影
-@mixin box-shadow($shadow: $default-box-shadow) {
-  box-shadow: $shadow;
-}
 //超出隐藏
 @mixin ellipsis-x($row-num: 1) {
   @if $row-num!=1 {

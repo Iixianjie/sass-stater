@@ -11,11 +11,10 @@
   margin-right: auto;
 }
 
-
 .disabled {
   pointer-events: none;
   user-select: none;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 /* 可见 */
@@ -28,7 +27,7 @@
 }
 
 .overflow-hide {
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .overflow-auto {
@@ -72,7 +71,6 @@
   font-family: $number-family;
 }
 
-
 // 文字性质
 .bold {
   font-weight: 600;
@@ -83,7 +81,7 @@
 }
 
 .tc {
-  text-align: center
+  text-align: center;
 }
 
 .tr {
@@ -97,7 +95,6 @@
 .lhn {
   line-height: normal;
 }
-
 
 // 字体大小 行高取字体值+8px
 .fs-12 {
@@ -229,13 +226,14 @@
   margin-bottom: 40px;
 }
 
-
 /* 选择 */
-[noselect], .noselect {
+[noselect],
+.noselect {
   user-select: none;
 }
 
-[full], .full {
+[full],
+.full {
   position: absolute;
   left: 0;
   top: 0;
@@ -243,7 +241,8 @@
   bottom: 0;
 }
 
-[extension], .extension {
+[extension],
+.extension {
   position: relative;
 
   &::before {
@@ -254,7 +253,6 @@
     right: -30%;
     bottom: -30%;
   }
-
 }
 
 /* 样式 */
@@ -262,17 +260,55 @@
   border-radius: $default-border-radius;
 }
 
-.shadow {
-  box-shadow: $default-box-shadow;
+/* 阴影 */
+.shadow-0 {
+  box-shadow: none !important;
 }
 
+.shadow-1 {
+  box-shadow: $default-box-shadow;
+}
+.shadow-1-half {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-3 {
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-4 {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
+}
+
+/* 24dp elevation */
+.shadow-5 {
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-hover {
+  transition: box-shadow 0.25s;
+
+  &:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
 
 /* 字体图标相关 */
-i{
+i {
   font-style: normal;
 }
 
-.iconfont{
+.iconfont {
   display: inline-block;
   font-family: 'iconfont' !important;
   font-style: normal;
@@ -280,9 +316,8 @@ i{
   text-rendering: auto;
 }
 
-
 /* 动画 */
-.animate-spin { 
+.animate-spin {
   transform-origin: center center;
   animation: fa-spin 2s infinite linear;
 }
