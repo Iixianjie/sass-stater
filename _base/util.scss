@@ -55,3 +55,8 @@
 @function rem($val) {
   @return $val / $baseFontSize + rem;
 }
+
+//计算px值
+@function px($val) {
+  @return $val / ($reality-width / $adaptive-width) + px;
+}

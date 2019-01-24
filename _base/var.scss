@@ -2,6 +2,8 @@
 
 //设计图宽度
 $reality-width: 750;
+//待适配手机的宽度
+$adaptive-width: 375;
 //rem转换尺寸
 $baseFontSize: $reality-width / 10;
 //栅格默认列数
