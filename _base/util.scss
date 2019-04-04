@@ -53,7 +53,15 @@
 
 //计算rem值
 @function rem($val) {
-  @return $val / $baseFontSize + rem;
+  @return $val / ($reality-width / 10) + rem;
+}
+
+@function remH($val) {
+  @return $val / ($reality-height / 10) + rem;
+}
+
+@function wpx2percent($width) {
+  @return $width / $reality-width * 100 + 0%;
 }
 
 //计算px值
