@@ -153,10 +153,10 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 
-a:hover:not(.btn) {
-  color: $a-hover-color;
-  text-decoration: underline;
-}
+// a:hover:not(.btn) {
+//   color: $a-hover-color;
+//   text-decoration: underline;
+// }
 
 a[disabled],
 input[disabled],
