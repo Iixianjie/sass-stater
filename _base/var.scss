@@ -37,19 +37,9 @@ $default-border-radius: 4px;
 
 
 /* 文字 */
-// ========================================================================
-
-// 移动端
-// $font-size-sm: 12px;    //最小说明文本
-// $font-size-s: 14px;   //页面辅助信息
-// $default-font-size: 16px;
-// $font-size-big: 30px;    //特大字体
-// $font-size-lg: 20px;    //标题
-
-// PC
 $font-size-sm: 12px;
-$font-size-s: 14px;
-$font-size-m: 16px;
+$font-size-s: 14px;   // pc默认字体
+$font-size-m: 16px;   // 移动端默认字体
 $font-size-20: 20px;
 $font-size-24: 24px;
 $font-size-30: 30px;
@@ -59,7 +49,7 @@ $font-size-56: 56px;
 $font-size-68: 68px;
 
 // $default-font-size: $font-size-s;
-$default-font-size: $font-size-m + 2;
+$default-font-size: $font-size-m;
 
 //默认字体
 $font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
