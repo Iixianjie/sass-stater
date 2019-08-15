@@ -21,25 +21,25 @@ $col-one-width: 100% / $col-num;
 // ========================================================================
 
 // 间距
-$space-4px: 4px;
-$space-1: 8px;
-$space-2: 16px;
-$space-3: 24px;
-$space-4: 32px;
-$space-5: 40px;
-$space-6: 48px;
-$space-7: 56px;
-$space-8: 64px;
-
+$space-4: 4px;
+$space-8: 8px;
+$space-8: 12px;
+$space-16: 16px;
+$space-24: 24px;
+$space-32: 32px;
+$space-40: 40px;
+$space-48: 48px;
+$space-56: 56px;
+$space-64: 64px;
 
 //默认圆角半径
 $default-border-radius: 4px;
-
 
 /* 文字 */
 $font-size-sm: 12px;
 $font-size-s: 14px;   // pc默认字体
 $font-size-m: 16px;   // 移动端默认字体
+$font-size-18: 18px;   // 移动端默认字体
 $font-size-20: 20px;
 $font-size-24: 24px;
 $font-size-30: 30px;
@@ -48,8 +48,8 @@ $font-size-46: 46px;
 $font-size-56: 56px;
 $font-size-68: 68px;
 
-// $default-font-size: $font-size-s;
-$default-font-size: $font-size-m;
+// $default-font-size: $font-size-s;  // pc端默认字号14
+$default-font-size: $font-size-m;   // 移动端默认字号16
 
 //默认字体
 $font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',

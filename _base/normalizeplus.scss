@@ -1,4 +1,4 @@
-/*!
+/*
  * -------------------------
  * Author: lixianjie
  * gitHub: https://github.com/Iixianjie/sass-stater
@@ -16,7 +16,6 @@
 
 html {
   font-family: $font-family;
-  line-height: 1.15;
   text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
@@ -25,6 +24,7 @@ html {
 body {
   margin: 0;
   font-weight: 400;
+  line-height: 1.15;
   color: $b-primary;
   font-size: $default-font-size;
   background-color: $body-background;
@@ -147,7 +147,7 @@ sub {
 sup {
   top: -0.5em;
 }
-
+/* 以link类来代替a连接的默认样式，否则每次将a连接作为块包裹的时候都要覆盖颜色 */
 a {
   color: $a-color;
   text-decoration: none;
@@ -155,11 +155,13 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 
-/* :not导致权限提高不方便覆写 */
-//a:hover:not(.btn) {
-a:hover {
-   color: $a-hover-color;
- }
+.link {
+  color: $a-color;
+
+  &:hover {
+    color: $a-hover-color;
+  }
+}
 
 a[disabled],
 input[disabled],
