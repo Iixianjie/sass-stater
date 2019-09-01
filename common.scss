@@ -341,16 +341,16 @@ i {
 }
 
 /* 动画 */
-.animate-spin {
+.bk-animated-spin {
   transform-origin: center center;
-  animation: fa-spin 2s infinite linear;
+  animation: bk-spin 2s infinite linear;
 }
 
-.animate-pulse {
-  animation: fa-spin 1s infinite steps(8);
+.bk-animated-steps {
+  animation: bk-spin 1s infinite steps(8);
 }
 
-@keyframes fa-spin {
+@keyframes bk-spin {
   0% {
     transform: rotate(0deg);
   }
