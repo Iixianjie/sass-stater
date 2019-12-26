@@ -23,7 +23,7 @@ $col-one-width: 100% / $col-num !default;
 // 间距
 $space-4: 4px;
 $space-8: 8px;
-$space-8: 12px;
+$space-12: 12px;
 $space-16: 16px;
 $space-24: 24px;
 $space-32: 32px;
@@ -52,7 +52,7 @@ $font-size-68: 68px;
 $default-font-size: $font-size-m !default;   // 移动端默认字号16
 
 //默认字体
-$font-family: PingFang SC,Helvetica Neue,Microsoft YaHei;
+$font-family: PingFang SC,Helvetica Neue,Microsoft YaHei !default;
 $code-family: Consolas, Menlo, Courier, monospace !default;
 $number-family: tabular-nums !default;
 
