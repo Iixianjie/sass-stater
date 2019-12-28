@@ -6,7 +6,7 @@ export const base = {
   adaptiveWidth: 375,
   colNum: 24,
   containerWidth: 1024,
-  colOneWidth: `${100 / this.colNum}%`
+  colOneWidth: `${100 / 24}%`
 };
 
 export const space = {
@@ -25,7 +25,7 @@ export const space = {
 export const fontSize = {
   fsSm: '12px',
   fsS:'14px',
-  fsM:'16px',
+  fsM: '16px',
   fs18: '18px',
   fs20: '20px',
   fs24: '24px',
@@ -34,7 +34,7 @@ export const fontSize = {
   fs46: '46px',
   fs56: '56px',
   fs68: '68px',
-  default: this.fsM,
+  default: '16px',
 }
 
 export const family = {
@@ -101,7 +101,6 @@ export const shadow = {
   s4: '0 16px 24px 2px rgba(0, 0, 0, 0.14),0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2)',
   s5: '0 24px 38px 3px rgba(0, 0, 0, 0.14),0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2)',
   hover: '0 8px 17px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-  default: this.s1,
 }
 
 export const breakpoint = {
