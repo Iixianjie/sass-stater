@@ -1,4 +1,4 @@
-export function ellipsisX(rowNum = 1) {
+function ellipsisX(rowNum = 1) {
     if (rowNum !== 1) {
         return `
       overflow: hidden;
@@ -13,15 +13,16 @@ export function ellipsisX(rowNum = 1) {
     white-space: nowrap;
   `;
 }
-export function size(size) {
+function size(size) {
     return `
-  width: ${size};
-  height: ${size};
+    width: ${size};
+    height: ${size};
   `;
 }
-export function wh(w, h) {
+size.wh = function wh(w, h) {
     return `
-  width: ${w};
-  height: ${h};
+    width: ${w};
+    height: ${h};
   `;
-}
+};
+export { size, ellipsisX, };
