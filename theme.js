@@ -1,5 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // Dust Red / 薄暮
-export const red = {
+exports.red = {
     c1: '#fff1f0',
     c2: '#ffccc7',
     c3: '#ffa39e',
@@ -12,7 +14,7 @@ export const red = {
     c10: '#5c0011'
 };
 // Volcano / 火山
-export const vol = {
+exports.vol = {
     c1: '#fff2e8',
     c2: '#ffd8bf',
     c3: '#ffbb96',
@@ -25,7 +27,7 @@ export const vol = {
     c0: '#610b00',
 };
 // Sunset Orange / 日暮
-export const orange = {
+exports.orange = {
     c1: '#fff7e6',
     c2: '#ffe7ba',
     c3: '#ffd591',
@@ -38,7 +40,7 @@ export const orange = {
     c0: '#612500',
 };
 // Calendula Gold / 金盏花
-export const gold = {
+exports.gold = {
     c1: '#fffbe6',
     c2: '#fff1b8',
     c3: '#ffe58f',
@@ -51,7 +53,7 @@ export const gold = {
     c10: '#613400',
 };
 // Sunrise Yellow / 日出
-export const yellow = {
+exports.yellow = {
     c1: '#feffe6',
     c2: '#ffffb8',
     c3: '#fffb8f',
@@ -64,7 +66,7 @@ export const yellow = {
     c10: '#614700',
 };
 // Lime / 青柠
-export const lime = {
+exports.lime = {
     c1: '#fcffe6',
     c2: '#f4ffb8',
     c3: '#eaff8f',
@@ -77,7 +79,7 @@ export const lime = {
     c10: '#254000',
 };
 // Polar Green / 极光绿
-export const green = {
+exports.green = {
     c1: '#f6ffed',
     c2: '#d9f7be',
     c3: '#b7eb8f',
@@ -90,7 +92,7 @@ export const green = {
     c10: '#092b00',
 };
 // Cyan / 明青
-export const cyan = {
+exports.cyan = {
     c1: '#e6fffb',
     c2: '#b5f5ec',
     c3: '#87e8de',
@@ -103,7 +105,7 @@ export const cyan = {
     c10: '#002329',
 };
 // Daybreak Blue / 拂晓蓝
-export const blue = {
+exports.blue = {
     c1: '#e6f7ff',
     c2: '#bae7ff',
     c3: '#91d5ff',
@@ -116,7 +118,7 @@ export const blue = {
     c10: '#002766',
 };
 // Geek Blue / 极客蓝
-export const geekblue = {
+exports.geekblue = {
     c1: '#f0f5ff',
     c2: '#d6e4ff',
     c3: '#adc6ff',
@@ -129,7 +131,7 @@ export const geekblue = {
     c10: '#030852',
 };
 // Golden Purple / 酱紫
-export const purple = {
+exports.purple = {
     c1: '#f9f0ff',
     c2: '#efdbff',
     c3: '#d3adf7',
@@ -142,7 +144,7 @@ export const purple = {
     c10: '#120338',
 };
 // Magenta / 法式洋红
-export const pink = {
+exports.pink = {
     c1: '#fff0f6',
     c2: '#ffd6e7',
     c3: '#ffadd2',

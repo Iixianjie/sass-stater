@@ -1,13 +1,15 @@
-import { cyan, geekblue } from './theme';
-export const base = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var theme_1 = require("./theme");
+exports.base = {
     realityWidth: 750,
     realityHeight: 1080,
     adaptiveWidth: 375,
     colNum: 24,
     containerWidth: 1024,
-    colOneWidth: `${100 / this.colNum}%`
+    colOneWidth: 100 / 24 + "%"
 };
-export const space = {
+exports.space = {
     space4: '4px',
     space8: '8px',
     space12: '12px',
@@ -19,7 +21,7 @@ export const space = {
     space56: '56px',
     space64: '64px'
 };
-export const fontSize = {
+exports.fontSize = {
     fsSm: '12px',
     fsS: '14px',
     fsM: '16px',
@@ -31,26 +33,26 @@ export const fontSize = {
     fs46: '46px',
     fs56: '56px',
     fs68: '68px',
-    default: this.fsM,
+    default: '16px',
 };
-export const family = {
+exports.family = {
     font: 'PingFang SC,Helvetica Neue,Microsoft YaHe',
     code: 'Consolas, Menlo, Courier, monospace',
     number: 'tabular-nums',
 };
-export const zIndex = {
+exports.zIndex = {
     z: 1000,
     zDrawer: 1200,
     zModal: 1400,
     zTooltip: 1600,
 };
-export const animation = {
+exports.animation = {
     transtion: '0.3s',
 };
-export const decorate = {
+exports.decorate = {
     borderRadius: '2px',
 };
-export const black = {
+exports.black = {
     title: 'rgba(0, 0, 0, 0.9)',
     primary: ' rgba(0, 0, 0, 0.75)',
     second: 'rgba(0, 0, 0, 0.45)',
@@ -58,7 +60,7 @@ export const black = {
     border: 'rgba(0, 0, 0, 0.15)',
     bg: 'rgba(0, 0, 0, 0.04)',
 };
-export const white = {
+exports.white = {
     title: 'rgba(255, 255, 255, 1)',
     primary: 'rgba(255, 255, 255, 0.85)',
     second: 'rgba(255, 255, 255, 0.65)',
@@ -66,23 +68,23 @@ export const white = {
     border: 'rgba(255, 255, 255, 0.25)',
     bg: 'rgba(255, 255, 255, 0.09)',
 };
-export const color = {
-    tips: black.disable,
-    mask: black.disable,
+exports.color = {
+    tips: exports.black.disable,
+    mask: exports.black.disable,
     info: '#2e88fa',
     success: '#13ce66',
     error: '#F83D48',
     warn: '#FFC838',
-    a: geekblue.c6,
-    aHover: geekblue.c4,
-    theme: cyan.c6,
-    themeLight: cyan.c4,
-    themeDark: cyan.c8,
+    a: theme_1.geekblue.c6,
+    aHover: theme_1.geekblue.c4,
+    theme: theme_1.cyan.c6,
+    themeLight: theme_1.cyan.c4,
+    themeDark: theme_1.cyan.c8,
     bgColor: '#f6f6f6',
-    placeHolder: black.second,
-    border: black.border,
+    placeHolder: exports.black.second,
+    border: exports.black.border,
 };
-export const shadow = {
+exports.shadow = {
     s1: '0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)',
     half: '0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12),0 3px 1px -1px rgba(0, 0, 0, 0.2)',
     s2: '0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),0 2px 4px -1px rgba(0, 0, 0, 0.3)',
@@ -90,9 +92,8 @@ export const shadow = {
     s4: '0 16px 24px 2px rgba(0, 0, 0, 0.14),0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2)',
     s5: '0 24px 38px 3px rgba(0, 0, 0, 0.14),0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2)',
     hover: '0 8px 17px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-    default: this.s1,
 };
-export const breakpoint = {
+exports.breakpoint = {
     xs: '0px',
     sm: '576px',
     md: '768px',
