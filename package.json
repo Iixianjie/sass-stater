@@ -1,16 +1,20 @@
 {
   "name": "style-base",
-  "version": "0.0.15",
+  "version": "1.0.2",
   "description": "包含常用sass变量、混合、function、ant design色板、可选的felx栅格和float栅格以及常用的工具类",
   "main": "./main.scss",
   "authors": {
     "name": "lixianjie",
     "email": "1073830130@qq.com"
   },
+  "scripts": {
+    "build": "sass ./main.scss ./dist/index.css",
+    "publish": "npm publish --access public"
+  },
   "repository": "",
-  "scripts": {},
-  "devDependencies": {},
-  "peerDependencies": {},
-  "dependencies": {},
+  "devDependencies": {
+    "@ant-design/colors": "^3.2.2",
+    "sass": "^1.24.4"
+  },
   "license": "MIT"
 }

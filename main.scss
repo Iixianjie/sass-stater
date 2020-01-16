@@ -1,17 +1,3 @@
-/* 重置 */
-@import '_base/normalizeplus'; 
-
-/* 栅格 */
-// @import '_base/flex-grid';
-
-/* 布局 */
-// @import './layout/common';
-
-/* 块 */
-// @import './block/common';
-
-/* 原件 */
-// @import './element/common';
-
-/* 公共样式、工具类 */
-@import './common';
+@import "./base/normalize";
+@import "./base/grid";
+@import "./base/util-class";
