@@ -1,4 +1,4 @@
-@import "../var/index";
+@import '../var/index';
 
 // Reboot
 //
@@ -8,7 +8,8 @@
 // Normalize is licensed MIT. https://github.com/necolas/normalize.css
 
 // HTML & Body reset
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -71,13 +72,13 @@ section {
 
 body {
   margin: 0; // 1
-   color: $b-primary;
-   font-size: $font-size;
-   font-family: $font-family;
-   font-variant: $font-variant-base;
-   line-height: $line-height-base;
-   background-color: $body-background; // 2
-   font-feature-settings: $font-feature-settings-base;
+  color: $b-primary;
+  font-size: $font-size;
+  font-family: $font-family;
+  font-variant: $font-variant-base;
+  line-height: $line-height-base;
+  background-color: $body-background; // 2
+  font-feature-settings: $font-feature-settings-base;
 }
 
 // Suppress the focus outline on elements that cannot be accessed via keyboard.
@@ -116,7 +117,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5em;
-   color: $b-title;
+  color: $b-title;
   font-weight: 500;
 }
 
@@ -232,11 +233,11 @@ a {
   -webkit-text-decoration-skip: objects; // remove gaps in links underline in iOS 8+ and Safari 8+.
 
   &:hover {
-     color: $color-5;
+    color: $color-5;
   }
 
   &:active {
-     color: $color-7;
+    color: $color-7;
   }
 
   &:active,
@@ -261,7 +262,7 @@ code,
 kbd,
 samp {
   font-size: 1em; // Correct the odd `em` font sizing in all browsers.
-   font-family: $code-family;
+  font-family: $code-family;
 }
 
 pre {
@@ -500,7 +501,8 @@ mark {
 }
 
 ::selection {
-   background: $color;
+  background: $color;
+  color: #fff;
 }
 
 // Utility classes

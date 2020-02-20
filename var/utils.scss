@@ -1,5 +1,12 @@
 @import 'var';
 
+@mixin full{
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
 // 占位文本颜色
 @mixin placeholder($color: $b-second) {
   &::placeholder {
@@ -39,4 +46,46 @@
 @mixin wh($width, $height) {
   width: $width;
   height: $height;
+}
+
+/* effect */
+@mixin effect-shadow {
+  cursor: pointer;
+  transition: box-shadow 0.25s;
+  box-shadow: $shadow-1;
+
+  &:hover {
+    box-shadow: $shadow-hover;
+  }
+
+  &:active {
+    box-shadow: $shadow-1-half;
+  }
+}
+
+@mixin effect-bg {
+  cursor: pointer;
+  transition: background-color 0.25s;
+
+  &:hover {
+    background-color: $b-divider;
+  }
+
+  &:active {
+    background-color: $b-border;
+  }
+}
+
+@mixin effect-border {
+  cursor: pointer;
+  transition: border 0.25s;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid $color;
+  }
+
+  &:active {
+    border: 1px solid scale-color($color, $lightness: -30%);
+  }
 }

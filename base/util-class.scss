@@ -1,4 +1,4 @@
-@import "../var/index";
+@import '../var/index';
 
 :root {
   /* --------------------- 工具类 --------------------- */
@@ -50,6 +50,10 @@
 
   .fw-600 {
     font-weight: $fw-600;
+  }
+
+  .bold {
+    font-weight: bold;
   }
 
   .tl {
@@ -454,23 +458,28 @@
     padding-right: 32px;
   }
 
-  /* -------------------- 交互 -------------------- */
-  .no-select {
-    user-select: none;
+  .divide-8 {
+    height: 8px;
   }
 
-  // 扩大交互区
-  .expand {
-    position: relative;
+  .divide-16 {
+    height: 16px;
+  }
 
-    &::before {
-      content: '';
-      position: absolute;
-      left: -30%;
-      top: -30%;
-      right: -30%;
-      bottom: -30%;
-    }
+  .divide-24 {
+    height: 24px;
+  }
+
+  .divide-32 {
+    height: 32px;
+  }
+
+  .divide-40 {
+    height: 40px;
+  }
+
+  .divide-48 {
+    height: 48px;
   }
 
   /* -------------------- 装饰 -------------------- */
@@ -533,11 +542,85 @@
     }
   }
 
-  /* --------------------- 其他 --------------------- */
+  /* --------------------- 遮罩 --------------------- */
+  .fr-mask {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: $z-index;
+    @include full;
+  }
+
+  .fr-mask-b {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: $z-index;
+    @include full;
+  }
+
+  /* --------------------- 图片 --------------------- */
   // 圆形图片
   .circle-img {
     border-radius: 50%;
     border: 1px solid $b-border;
     overflow: hidden;
+  }
+
+
+  /* --------------------- 边框 --------------------- */
+  .border {
+    border: 1px solid $b-border;
+  }
+  /* 1px 线 */
+  .fr-hb-t,
+  .fr-hb-b {
+    &:before {
+      position: absolute;
+      content: '';
+      height: 1px;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: $b-border;
+      transform: scaleY(0.5);
+    }
+  }
+
+  .fr-hb-b {
+    &:before {
+      top: unset;
+      bottom: 0;
+    }
+  }
+
+  /* --------------------- 交互 --------------------- */
+
+  .no-select {
+    user-select: none;
+  }
+
+  // 扩大交互区
+  .expand {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -30%;
+      top: -30%;
+      right: -30%;
+      bottom: -30%;
+    }
+  }
+
+  .effect-shadow {
+    @include effect-shadow;
+  }
+
+  .effect-bg {
+    @include effect-bg;
+  }
+
+  .effect-border {
+    @include effect-border;
   }
 }
