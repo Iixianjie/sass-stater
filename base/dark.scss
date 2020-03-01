@@ -1,0 +1,47 @@
+@import "../var/index";
+
+[data-theme="#{$prefix}-dark"] {
+  /* ---> normalize.scss */
+  .body {
+    color: $w-primary;
+    background-color: $body-background-b;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $w-title;
+  }
+
+  a[disabled] {
+    color: $w-disable;
+  }
+
+  .caption {
+    color: $w-second;
+  }
+
+  /* ---> util-class.scss */
+  .color-title {
+    color: $w-title;
+  }
+
+  .color-primary {
+    color: $w-primary
+  }
+
+  .color-second {
+    color: $w-second
+  }
+
+  .border {
+    border: 1px solid $w-border;
+  }
+
+  .fr-stress {
+    text-shadow: $stress-shadow-w;
+  }
+}

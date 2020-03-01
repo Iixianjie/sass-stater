@@ -1,104 +1,113 @@
 @import "./colors";
 /* -------------------- 基础 -------------------- */
 
-$prefix: fr; // flicker
+// flicker
+$prefix: fr !default;
 
 // 网格
 $grid-num: 24 !default;
-$grid-gutter-width: 0;
+
+$design-width: 750 !default;
+$dpr: 2 !default;
 
 /* -------------------- 颜色 --------------------- */
 // 功能色&主题色
-$color-info: $blue-6;
-$color-success: $green-6;
-$color-error: $red-5;
-$color-warn: $gold-6;
+$color-info: $blue-6 !default;
+$color-success: $green-6 !default;
+$color-error: $red-5 !default;
+$color-warn: $gold-6 !default;
 
-$normal-color: #d9d9d9;
-$white: #fff;
-$black: #000;
+// 亮色&暗色
+$white: $grey-1 !default;
+$black: $grey-13 !default;
 
-$color-1: $cyan-1;
-$color-2: $cyan-2;
-$color-3: $cyan-3;
-$color-4: $cyan-4;
-$color-5: $cyan-5;
-$color-6: $cyan-6;
-$color-7: $cyan-7;
-$color-8: $cyan-8;
-$color-9: $cyan-9;
-$color-10: $cyan-10;
-$color: $color-6;
+// 主题色
+// 起新项目时可以到这里生成主题色 https://ant.design/docs/spec/colors-cn
+$color-1: $cyan-1 !default;
+$color-2: $cyan-2 !default;
+$color-3: $cyan-3 !default;
+$color-4: $cyan-4 !default;
+$color-5: $cyan-5 !default;
+$color-6: $cyan-6 !default;
+$color-7: $cyan-7 !default;
+$color-8: $cyan-8 !default;
+$color-9: $cyan-9 !default;
+$color-10: $cyan-10 !default;
+$color: $color-6 !default;
 
 // 黑白
-$b-title: rgba(0, 0, 0, 0.9); // Title
-$b-primary: rgba(0, 0, 0, 0.75); // 主要文本色
-$b-second: rgba(0, 0, 0, 0.45); // 次要文本色
-$b-disable: rgba(0, 0, 0, 0.25); // 禁用
-$b-border: rgba(0, 0, 0, 0.15); // 边框
-$b-divider: rgba(0, 0, 0, 0.06); // 分割线
-$b-bg: rgba(0, 0, 0, 0.04); // 背景色
+$b-title: rgba(0, 0, 0, 0.9) !default; // Title
+$b-primary: rgba(0, 0, 0, 0.75) !default; // 主要文本色
+$b-second: rgba(0, 0, 0, 0.45) !default; // 次要文本色
+$b-disable: rgba(0, 0, 0, 0.25) !default; // 禁用
+$b-border: rgba(0, 0, 0, 0.15) !default; // 边框
+$b-divider: rgba(0, 0, 0, 0.06) !default; // 分割线
+$b-bg: rgba(0, 0, 0, 0.04) !default; // 背景色
 
-$w-title: rgba(255, 255, 255, 0.9);
-$w-primary: rgba(255, 255, 255, 0.75);
-$w-second: rgba(255, 255, 255, 0.45);
-$w-disable: rgba(255, 255, 255, 0.30);
-$w-border: rgba(255, 255, 255, 0.20);
-$w-divider: rgba(0, 0, 0, 0.12);
-$w-bg: rgba(255, 255, 255, 0.08);
+$w-title: rgba(255, 255, 255, 0.95) !default;
+$w-primary: rgba(255, 255, 255, 0.8) !default;
+$w-second: rgba(255, 255, 255, 0.45) !default;
+$w-disable: rgba(255, 255, 255, 0.30) !default;
+$w-border: rgba(255, 255, 255, 0.20) !default;
+$w-divider: rgba(0, 0, 0, 0.12) !default;
+$w-bg: rgba(255, 255, 255, 0.08) !default;
 
 // body的颜色
-$body-background: $white;
+$body-background: $white !default;
+$body-background-b: $black !default;
+
 // 组件的基础色
-$component-background: $white;
+$component-background: $white !default;
+$component-background-b: $black !default;
 
 // 遮罩
-$w-mask: rgba(255, 255, 255, 0.75);
-$b-mask: rgba(0, 0, 0, 0.75);
+$w-mask: rgba(255, 255, 255, 0.75) !default;
+$b-mask: rgba(0, 0, 0, 0.75) !default;
 
 /* -------------------- 文字 --------------------- */
 // 大小
-$fs-12: 12px;
-$fs-14: 14px;
-$fs-16: 16px;
-$fs-20: 20px;
-$fs-24: 24px;
-$fs-30: 30px;
-$fs-38: 38px;
-$fs-46: 46px;
-$fs-58: 58px;
-$fs-68: 68px;
-$font-size: $fs-14;
+$fs-12: 12px !default;
+$fs-14: 14px !default;
+$fs-16: 16px !default;
+$fs-20: 20px !default;
+$fs-24: 24px !default;
+$fs-30: 30px !default;
+$fs-38: 38px !default;
+$fs-46: 46px !default;
+$fs-58: 58px !default;
+$fs-68: 68px !default;
+$font-size: $fs-14 !default;
 
 // 字重
-$fw-400: 400;
-$fw-500: 500;
-$fw-600: 600;
+$fw-400: 400 !default;
+$fw-500: 500 !default;
+$fw-600: 600 !default;
+$fw-bold: bold !default;
 
 // 行高 (文本行高为文本大小 + 8)
-$line-height-base: 1.5715;
+$line-height-base: 1.5715 !default;
 
 // 字体 
 $font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
   'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-  'Noto Color Emoji';
-$code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-$font-variant-base: tabular-nums;
-$font-feature-settings-base: 'tnum';
+  'Noto Color Emoji' !default;
+$code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace !default;
+$font-variant-base: tabular-nums !default;
+$font-feature-settings-base: 'tnum' !default;
 
 /* -------------------- 距离 --------------------- */
-$space-4: 4px;
-$space-8: 8px;
-$space-12: 12px;
-$space-14: 14px;
-$space-16: 16px;
-$space-20: 20px;
-$space-24: 24px;
-$space-30: 30px;
-$space-38: 38px;
-$space-46: 46px;
-$space-58: 58px;
-$space-68: 68px;
+$space-4: 4px !default;
+$space-8: 8px !default;
+$space-12: 12px !default;
+$space-14: 14px !default;
+$space-16: 16px !default;
+$space-20: 20px !default;
+$space-24: 24px !default;
+$space-30: 30px !default;
+$space-38: 38px !default;
+$space-46: 46px !default;
+$space-58: 58px !default;
+$space-68: 68px !default;
 
 /* -------------------- 层级 --------------------- */
 $z-index: 10 !default; // 高于基础层
@@ -108,49 +117,48 @@ $z-index-message: 1010 !default;
 $z-index-tooltip: 1050 !default;
 
 /* -------------------- 动画 --------------------- */
-$animation-duration-slow: 0.3s; // Modal
-$animation-duration-base: 0.2s;
-$animation-duration-fast: 0.1s; // Tooltip
+$animation-duration-slow: 0.3s !default; // Modal
+$animation-duration-base: 0.2s !default;
+$animation-duration-fast: 0.1s !default; // Tooltip
 
 /* -------------------- 装饰 --------------------- */
 // 圆角
-$border-radius: 2px;
+$border-radius: 2px !default;
 
 // 阴影 (使用materialize风格的阴影可以更好的展示元素的纵深)
 $shadow-1: 0 2px 2px 0 rgba(0,0,0,0.14),
            0 3px 1px -2px rgba(0,0,0,0.12),
-           0 1px 5px 0 rgba(0,0,0,0.2);
+           0 1px 5px 0 rgba(0,0,0,0.2) !default;
 
-$shadow-1-half: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+$shadow-1-half: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2) !default;
 
 $shadow-hover: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
-0 6px 20px 0 rgba(0, 0, 0, 0.19) !default;
+0 6px 20px 0 rgba(0, 0, 0, 0.19) !default !default;
 
 $shadow-2: 0 4px 5px 0 rgba(0,0,0,0.14),
            0 1px 10px 0 rgba(0,0,0,0.12),
-           0 2px 4px -1px rgba(0,0,0,0.3);
+           0 2px 4px -1px rgba(0,0,0,0.3) !default;
 
 $shadow-3: 0 8px 17px 2px rgba(0,0,0,0.14),
            0 3px 14px 2px rgba(0,0,0,0.12),
-           0 5px 5px -3px rgba(0, 0, 0, 0.2);
+           0 5px 5px -3px rgba(0, 0, 0, 0.2) !default;
 
 $shadow-4: 0 16px 24px 2px rgba(0,0,0,0.14),
            0 6px 30px 5px rgba(0,0,0,0.12),
-           0 8px 10px -7px rgba(0,0,0,0.2);
+           0 8px 10px -7px rgba(0,0,0,0.2) !default;
 
 $shadow-5: 0 24px 38px 3px rgba(0,0,0,0.14),
            0 9px 46px 8px rgba(0,0,0,0.12),
-           0 11px 15px -7px rgba(0,0,0,0.2);
+           0 11px 15px -7px rgba(0,0,0,0.2) !default;
 
 // 用于在某个部件处于相同色调的背景下时对其进行高亮强调
-$stress-shadow-w: -1px -1px 2px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff;
-$stress-shadow-b: -1px -1px 2px #666, 1px 1px 2px #666, 1px -1px 2px #666, -1px 1px 2px #666;
-
+$stress-shadow-w: -1px -1px 2px #fff, 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff !default;
+$stress-shadow-b: -1px -1px 2px #666, 1px 1px 2px #666, 1px -1px 2px #666, -1px 1px 2px #666 !default;
 
 /* -------------------- 断点 --------------------- */
-$xs: 0px; //	<576
-$sm: 576px; //	≥576
-$md: 768px; //	≥768
-$lg: 992px; //	≥992
-$xl: 1200px; //	≥1200
-$xxl: 1600px; //	≥1600
+$xs: 0px !default; //	<576
+$sm: 576px !default; //	≥576
+$md: 768px !default; //	≥768
+$lg: 992px !default; //	≥992
+$xl: 1200px !default; //	≥1200
+$xxl: 1600px !default; //	≥1600

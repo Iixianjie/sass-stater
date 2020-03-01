@@ -24,7 +24,7 @@ presetPalettes.grey = [
 
 Object.entries(presetPalettes).forEach(([key, colors]) => {
   colors.forEach((color, index) => {
-    tpl += `$${key}-${++index}: ${color} !default;${newLine}`;
+    tpl += `$${key}-${++index}: ${color};${newLine}`;
   });
   tpl += newLine;
 });

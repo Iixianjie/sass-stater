@@ -1,17 +1,6 @@
 @import '../var/index';
 
 :root {
-  /* --------------------- 工具类 --------------------- */
-  .clearfix {
-    @include clearfix;
-  }
-
-  .center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   /* --------------------- 可见 --------------------- */
   .hide {
     display: none;
@@ -21,13 +10,39 @@
     display: block;
   }
 
-  /* --------------------- 浮动 --------------------- */
+  .visible {
+    visibility: visible;
+  }
+
+  .visible-hidden {
+    visibility: hidden;
+  }
+
+  .opacity-0 {
+    opacity: 0;
+  }
+
+  .opacity-1 {
+    opacity: 1;
+  }
+
+  /* --------------------- 布局 --------------------- */
   .float-right {
     float: right;
   }
 
   .float-left {
     float: left;
+  }
+
+  .clearfix {
+    @include clearfix;
+  }
+
+  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* --------------------- 文字 --------------------- */
@@ -70,6 +85,10 @@
 
   .vm {
     vertical-align: middle;
+  }
+
+  .vt {
+    vertical-align: top;
   }
 
   // 颜色
@@ -124,6 +143,10 @@
 
   .fs-16 {
     font-size: 16px;
+  }
+
+  .fs-18 {
+    font-size: 18px;
   }
 
   .fs-20 {
@@ -495,6 +518,7 @@
   .shadow-1 {
     box-shadow: $shadow-1;
   }
+
   .shadow-1-half {
     box-shadow: $shadow-1-half;
   }
@@ -513,14 +537,6 @@
 
   .shadow-5 {
     box-shadow: $shadow-5;
-  }
-
-  .shadow-hover {
-    transition: box-shadow 0.25s;
-
-    &:hover {
-      box-shadow: $shadow-hover;
-    }
   }
 
   /* --------------------- 动画 --------------------- */
@@ -545,14 +561,14 @@
   /* --------------------- 遮罩 --------------------- */
   .fr-mask {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: $w-mask;
     z-index: $z-index;
     @include full;
   }
 
   .fr-mask-b {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: $b-mask;
     z-index: $z-index;
     @include full;
   }
@@ -570,6 +586,7 @@
   .border {
     border: 1px solid $b-border;
   }
+
   /* 1px 线 */
   .fr-hb-t,
   .fr-hb-b {
@@ -622,5 +639,18 @@
 
   .effect-border {
     @include effect-border;
+  }
+
+  /* --------------------- 其他 --------------------- */
+  /* 防止文字与背景同色 */
+  .fr-stress {
+    text-shadow: $stress-shadow-b;
+  }
+
+  @supports (mix-blend-mode: difference) {
+    .fr-stress {
+      mix-blend-mode: difference;
+      text-shadow: none;
+    }
   }
 }

@@ -48,6 +48,15 @@
   height: $height;
 }
 
+@function rem($px) {
+  @return $px / $design-width * 100 + rem;
+}
+
+@function px($px) {
+  @return $px / $dpr + px;
+}
+
+
 /* effect */
 @mixin effect-shadow {
   cursor: pointer;
