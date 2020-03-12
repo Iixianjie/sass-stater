@@ -110,11 +110,10 @@ $space-58: 58px !default;
 $space-68: 68px !default;
 
 /* -------------------- 层级 --------------------- */
-$z-index: 10 !default; // 高于基础层
-$z-index-drawer: 990 !default;
-$z-index-modal: 1000 !default;
-$z-index-message: 1010 !default;
-$z-index-tooltip: 1050 !default;
+$z-index: 1000 !default; // 高于基础层
+$z-index-drawer: 1400 !default;
+$z-index-modal: 1800 !default;
+$z-index-message: 2200 !default;
 
 /* -------------------- 动画 --------------------- */
 $animation-duration-slow: 0.3s !default; // Modal
