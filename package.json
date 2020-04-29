@@ -18,6 +18,7 @@
   },
   "license": "MIT",
   "files": [
+    "dist",
     "base",
     "script",
     "var",
