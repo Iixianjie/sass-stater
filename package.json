@@ -9,11 +9,13 @@
   },
   "scripts": {
     "build": "sass ./main.scss ./dist/index.css",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "gcolors-var": "node ./script/generateColors.js"
   },
   "repository": "",
   "devDependencies": {
     "@ant-design/colors": "^3.2.2",
+    "inquirer": "^7.1.0",
     "sass": "^1.24.4"
   },
   "license": "MIT",

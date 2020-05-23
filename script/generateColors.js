@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const {presetPalettes, generate} = require('@ant-design/colors');
+const { presetPalettes, generate } = require('@ant-design/colors');
 
 let tpl = '';
 const newLine = '\r\n';
