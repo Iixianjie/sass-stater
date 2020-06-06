@@ -44,6 +44,14 @@
   margin-right: auto !important;
 }
 
+.psr {
+  position: relative !important;
+}
+
+.psa {
+  position: absolute !important;
+}
+
 /* --------------------- 文字 --------------------- */
 // 性质
 .ellipsis {
@@ -603,7 +611,6 @@
   border: 1px solid $b-border;
   overflow: hidden;
 }
-
 
 /* --------------------- 边框 --------------------- */
 .border {
