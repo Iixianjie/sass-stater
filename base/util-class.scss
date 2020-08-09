@@ -590,14 +590,14 @@
 }
 
 /* --------------------- 遮罩 --------------------- */
-.fr-mask {
+.m78-mask {
   position: fixed;
   background-color: $w-mask;
   z-index: $z-index;
   @include full;
 }
 
-.fr-mask-b {
+.m78-mask-b {
   position: fixed;
   background-color: $b-mask;
   z-index: $z-index;
@@ -618,8 +618,8 @@
 }
 
 /* 1px 线 */
-.fr-hb-t,
-.fr-hb-b {
+.m78-hb-t,
+.m78-hb-b {
   &:before {
     position: absolute;
     content: '';
@@ -632,7 +632,7 @@
   }
 }
 
-.fr-hb-b {
+.m78-hb-b {
   &:before {
     top: unset;
     bottom: 0;
@@ -673,12 +673,12 @@
 
 /* --------------------- 其他 --------------------- */
 /* 防止文字与背景同色 */
-.fr-stress {
+.m78-stress {
   text-shadow: $stress-shadow-b;
 }
 
 @supports (mix-blend-mode: difference) {
-  .fr-stress {
+  .m78-stress {
     mix-blend-mode: difference;
     text-shadow: none;
   }
