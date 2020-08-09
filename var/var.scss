@@ -123,6 +123,7 @@ $space-68: 68px !default;
 
 /* -------------------- 层级 --------------------- */
 $z-index: 1000 !default; // 高于基础层
+$z-index-base: 10 !default; // 常规层级提升
 $z-index-drawer: 1400 !default;
 $z-index-modal: 1800 !default;
 $z-index-message: 2200 !default;
