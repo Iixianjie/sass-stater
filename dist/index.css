@@ -18,8 +18,8 @@
 /* effect */
 html,
 body {
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 input::-ms-clear,
@@ -382,6 +382,140 @@ mark {
   content: "";
   display: table;
   clear: both;
+}
+
+/* -------------------- 基础 -------------------- */
+/* -------------------- 颜色 --------------------- */
+/* -------------------- 文字 --------------------- */
+/* -------------------- 距离 --------------------- */
+/* -------------------- 层级 --------------------- */
+/* -------------------- 动画 --------------------- */
+/* -------------------- 装饰 --------------------- */
+/* -------------------- 断点 --------------------- */
+/* -------------------- 基础 -------------------- */
+/* -------------------- 颜色 --------------------- */
+/* -------------------- 文字 --------------------- */
+/* -------------------- 距离 --------------------- */
+/* -------------------- 层级 --------------------- */
+/* -------------------- 动画 --------------------- */
+/* -------------------- 装饰 --------------------- */
+/* -------------------- 断点 --------------------- */
+/* effect */
+.m78-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.m78-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/*** 对齐 ***/
+.m78-main-center {
+  justify-content: center;
+}
+
+.m78-main-start {
+  justify-content: flex-start;
+}
+
+.m78-main-end {
+  justify-content: flex-end;
+}
+
+.m78-main-around {
+  justify-content: space-around;
+}
+
+.m78-main-between {
+  justify-content: space-between;
+}
+
+.m78-main-evenly {
+  justify-content: space-evenly;
+}
+
+.m78-cross-stretch {
+  align-items: stretch;
+}
+
+.m78-cross-start {
+  align-items: flex-start;
+}
+
+.m78-cross-end {
+  align-items: flex-end;
+}
+
+.m78-cross-center {
+  align-items: center;
+}
+
+/*** 值类 ***/
+.m78-order-minus1 {
+  order: -1;
+}
+
+.m78-order-1 {
+  order: 1;
+}
+
+.m78-order-2 {
+  order: 2;
+}
+
+.m78-order-3 {
+  order: 3;
+}
+
+.m78-order-4 {
+  order: 4;
+}
+
+.m78-order-5 {
+  order: 5;
+}
+
+.m78-flex-1 {
+  flex: 1;
+}
+
+.m78-flex-2 {
+  flex: 2;
+}
+
+.m78-flex-3 {
+  flex: 3;
+}
+
+.m78-flex-4 {
+  flex: 4;
+}
+
+.m78-flex-5 {
+  flex: 5;
+}
+
+.m78-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 0.5px;
+  width: 100%;
+  margin: 12px 0;
+}
+.m78-divider.__vertical {
+  height: 1.2em;
+  width: 0.5px;
+  margin: 0 12px;
+}
+
+.m78-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* -------------------- 基础 -------------------- */
@@ -972,16 +1106,16 @@ mark {
 }
 
 /* --------------------- 动画 --------------------- */
-.fr-animated-spin {
+.m78-animated-spin {
   transform-origin: center center;
-  animation: fr-spin 2s infinite linear;
+  animation: m78-spin 2s infinite linear;
 }
 
-.fr-animated-steps {
-  animation: fr-spin 1s infinite steps(8);
+.m78-animated-steps {
+  animation: m78-spin 1s infinite steps(8);
 }
 
-@keyframes fr-spin {
+@keyframes m78-spin {
   0% {
     transform: rotate(0deg);
   }
@@ -990,7 +1124,7 @@ mark {
   }
 }
 /* --------------------- 遮罩 --------------------- */
-.fr-mask {
+.m78-mask {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.75);
   z-index: 1000;
@@ -1000,7 +1134,7 @@ mark {
   top: 0;
 }
 
-.fr-mask-b {
+.m78-mask-b {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 1000;
@@ -1023,8 +1157,8 @@ mark {
 }
 
 /* 1px 线 */
-.fr-hb-t:before,
-.fr-hb-b:before {
+.m78-hb-t:before,
+.m78-hb-b:before {
   position: absolute;
   content: "";
   height: 1px;
@@ -1035,7 +1169,7 @@ mark {
   transform: scaleY(0.5);
 }
 
-.fr-hb-b:before {
+.m78-hb-b:before {
   top: unset;
   bottom: 0;
 }
@@ -1094,12 +1228,12 @@ mark {
 
 /* --------------------- 其他 --------------------- */
 /* 防止文字与背景同色 */
-.fr-stress {
+.m78-stress {
   text-shadow: -1px -1px 2px #666, 1px 1px 2px #666, 1px -1px 2px #666, -1px 1px 2px #666;
 }
 
 @supports (mix-blend-mode: difference) {
-  .fr-stress {
+  .m78-stress {
     mix-blend-mode: difference;
     text-shadow: none;
   }
