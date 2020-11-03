@@ -52,6 +52,54 @@
   position: absolute !important;
 }
 
+// 微调位置
+.move-t1 {
+  position: relative;
+  top: -1px !important;
+}
+
+.move-t2 {
+  position: relative;
+  top: -2px !important;
+}
+
+.move-t3 {
+  position: relative;
+  top: -3px !important;
+}
+
+.move-b1 {
+  position: relative;
+  bottom: -1px !important;
+}
+
+.move-b2 {
+  position: relative;
+  bottom: -2px !important;
+}
+
+.move-b3 {
+  position: relative;
+  bottom: -3px !important;
+}
+
+/* --------------------- 尺寸 --------------------- */
+.h-1em {
+  height: 1em !important;
+}
+
+.h-0d8em {
+  height: 0.8em !important;
+}
+
+.h-1d2em {
+  height: 1.2em !important;
+}
+
+.h-1d4em {
+  height: 1.4em !important;
+}
+
 /* --------------------- 文字 --------------------- */
 // 性质
 .ellipsis {
@@ -72,6 +120,22 @@
 
 .fw-600 {
   font-weight: $fw-600 !important;
+}
+
+.lh-0 {
+  line-height: 0 !important;
+}
+
+.lh-1 {
+  line-height: 1 !important;
+}
+
+.lh-base {
+  line-height: $line-height-base !important;
+}
+
+.lh-2 {
+  line-height: 2 !important;
 }
 
 .bold {
@@ -111,6 +175,10 @@
   color: $b-second !important;
 }
 
+.color-disabled {
+  color: $b-disable;
+}
+
 .color-primary {
   color: $color-6 !important;
 }
@@ -121,6 +189,18 @@
 
 .color-primary-d {
   color: $color-8 !important;
+}
+
+.color-sub {
+  color: $color-sub-6 !important;
+}
+
+.color-sub-l {
+  color: $color-sub-4 !important;
+}
+
+.color-sub-d {
+  color: $color-sub-8 !important;
 }
 
 .color-info {
@@ -137,6 +217,22 @@
 
 .color-error {
   color: $color-error !important;
+}
+
+.w-title {
+  color: $w-title !important;
+}
+
+.w-primary {
+  color: $w-primary !important;
+}
+
+.w-second {
+  color: $w-second !important;
+}
+
+.w-disabled {
+  color: $w-disable;
 }
 
 // 文字大小
@@ -570,6 +666,31 @@
   box-shadow: $shadow-5;
 }
 
+/* -------------------- 小型组件 -------------------- */
+
+.m78-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: $b-disable;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 4px;
+  @include status-bg;
+}
+
+
+.m78-triangle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-left: 5px solid $b-second;
+  border-radius: 2px;
+}
+
+
 /* --------------------- 动画 --------------------- */
 .#{$prefix}-animated-spin {
   transform-origin: center center;
@@ -669,6 +790,26 @@
 
 .effect-border {
   @include effect-border;
+}
+
+.effect-opacity {
+  @include effect-opacity;
+}
+
+.effect-scale {
+  @include effect-scale;
+}
+
+.effect-font-color {
+  @include effect-font-color;
+}
+
+.cus-p {
+  cursor: pointer;
+}
+
+.cus-na {
+  cursor: not-allowed;
 }
 
 /* --------------------- 其他 --------------------- */

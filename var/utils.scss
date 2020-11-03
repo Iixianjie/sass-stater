@@ -56,45 +56,132 @@
   @return $px / $dpr + px;
 }
 
+// 元素状态背景色
+@mixin status-bg {
+  
+  &.__red {
+    background-color: $color-error;
+  }
+
+  &.__blue {
+    background-color: $color-info;
+  }
+
+  &.__yellow {
+    background-color: $color-warn;
+  }
+
+  &.__green {
+    background-color: $color-success;
+  }
+}
+
+// 元素状态边框色
+@mixin status-bg {
+  
+  &.__red {
+    border-color: $color-error;
+  }
+
+  &.__blue {
+    border-color: $color-info;
+  }
+
+  &.__yellow {
+    border-color: $color-warn;
+  }
+
+  &.__green {
+    border-color: $color-success;
+  }
+}
+
 
 /* effect */
 @mixin effect-shadow {
   cursor: pointer;
-  transition: box-shadow 0.25s;
   box-shadow: $shadow-1;
+  transition: box-shadow 0.25s;
 
   &:hover {
     box-shadow: $shadow-hover;
   }
 
   &:active {
+    transition: box-shadow 0.25s 0.1s;
     box-shadow: $shadow-1-half;
   }
 }
 
-@mixin effect-bg {
+@mixin effect-bg($hover: $b-divider, $active: $b-border) {
   cursor: pointer;
   transition: background-color 0.25s;
 
   &:hover {
-    background-color: $b-divider;
+    background-color: $hover;
   }
 
   &:active {
-    background-color: $b-border;
+    transition: background-color 0.25s 0.1s;
+    background-color: $active;
   }
 }
 
-@mixin effect-border {
+@mixin effect-border($c: $color) {
   cursor: pointer;
-  transition: border 0.25s;
+  transition: border 0.25s; 
   border: 1px solid transparent;
 
   &:hover {
-    border: 1px solid $color;
+    border: 1px solid $c;
   }
 
   &:active {
-    border: 1px solid scale-color($color, $lightness: -30%);
+    transition: border 0.25s 0.1s;
+    border: 1px solid scale-color($c, $lightness: -30%);
+  }
+}
+
+@mixin effect-opacity() {
+  cursor: pointer;
+  transition: opacity 0.25s; 
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transition: opacity 0.25s 0.1s;
+    opacity: 0.7;
+  }
+}
+
+@mixin effect-scale() {
+  cursor: pointer;
+  transition: transform 0.25s; 
+
+  &:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  &:active {
+    transition: transform 0.25s 0.1s;
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+
+@mixin effect-font-color($c: $color) {
+  cursor: pointer;
+  color: $c;
+  transition: transform 0.25s; 
+
+
+  &:hover {
+    color: scale-color($c, $lightness: -20%);
+  }
+
+  &:active {
+    transition: transform 0.25s 0.1s;
+    color: scale-color($c, $lightness: -40%);
   }
 }

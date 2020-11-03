@@ -1,11 +1,13 @@
 @import "../var/index";
 
 .m78-column {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .m78-row {
+  position: relative;
   display: flex;
   flex-direction: row;
 }

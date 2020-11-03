@@ -19,7 +19,6 @@
 html,
 body {
   min-height: 100%;
-  min-width: 100%;
 }
 
 input::-ms-clear,
@@ -402,11 +401,13 @@ mark {
 /* -------------------- 断点 --------------------- */
 /* effect */
 .m78-column {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .m78-row {
+  position: relative;
   display: flex;
   flex-direction: row;
 }
@@ -621,6 +622,53 @@ mark {
   position: absolute !important;
 }
 
+.move-t1 {
+  position: relative;
+  top: -1px !important;
+}
+
+.move-t2 {
+  position: relative;
+  top: -2px !important;
+}
+
+.move-t3 {
+  position: relative;
+  top: -3px !important;
+}
+
+.move-b1 {
+  position: relative;
+  bottom: -1px !important;
+}
+
+.move-b2 {
+  position: relative;
+  bottom: -2px !important;
+}
+
+.move-b3 {
+  position: relative;
+  bottom: -3px !important;
+}
+
+/* --------------------- 尺寸 --------------------- */
+.h-1em {
+  height: 1em !important;
+}
+
+.h-0d8em {
+  height: 0.8em !important;
+}
+
+.h-1d2em {
+  height: 1.2em !important;
+}
+
+.h-1d4em {
+  height: 1.4em !important;
+}
+
 /* --------------------- 文字 --------------------- */
 .ellipsis {
   overflow: hidden;
@@ -645,6 +693,22 @@ mark {
 
 .fw-600 {
   font-weight: 600 !important;
+}
+
+.lh-0 {
+  line-height: 0 !important;
+}
+
+.lh-1 {
+  line-height: 1 !important;
+}
+
+.lh-base {
+  line-height: 1.5715 !important;
+}
+
+.lh-2 {
+  line-height: 2 !important;
 }
 
 .bold {
@@ -683,6 +747,10 @@ mark {
   color: rgba(0, 0, 0, 0.45) !important;
 }
 
+.color-disabled {
+  color: rgba(0, 0, 0, 0.25);
+}
+
 .color-primary {
   color: #13c2c2 !important;
 }
@@ -693,6 +761,18 @@ mark {
 
 .color-primary-d {
   color: #006d75 !important;
+}
+
+.color-sub {
+  color: #1890ff !important;
+}
+
+.color-sub-l {
+  color: #69c0ff !important;
+}
+
+.color-sub-d {
+  color: #0050b3 !important;
 }
 
 .color-info {
@@ -709,6 +789,22 @@ mark {
 
 .color-error {
   color: #ff4d4f !important;
+}
+
+.w-title {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.w-primary {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.w-second {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.w-disabled {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .fs-12 {
@@ -1137,6 +1233,39 @@ mark {
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
 
+/* -------------------- 小型组件 -------------------- */
+.m78-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.m78-dot.__red {
+  border-color: #ff4d4f;
+}
+.m78-dot.__blue {
+  border-color: #1890ff;
+}
+.m78-dot.__yellow {
+  border-color: #faad14;
+}
+.m78-dot.__green {
+  border-color: #52c41a;
+}
+
+.m78-triangle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-left: 5px solid rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+
 /* --------------------- 动画 --------------------- */
 .m78-animated-spin {
   transform-origin: center center;
@@ -1225,13 +1354,14 @@ mark {
 
 .effect-shadow {
   cursor: pointer;
-  transition: box-shadow 0.25s;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.25s;
 }
 .effect-shadow:hover {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .effect-shadow:active {
+  transition: box-shadow 0.25s 0.1s;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
 }
 
@@ -1243,6 +1373,7 @@ mark {
   background-color: rgba(0, 0, 0, 0.06);
 }
 .effect-bg:active {
+  transition: background-color 0.25s 0.1s;
   background-color: rgba(0, 0, 0, 0.15);
 }
 
@@ -1255,7 +1386,53 @@ mark {
   border: 1px solid #13c2c2;
 }
 .effect-border:active {
+  transition: border 0.25s 0.1s;
   border: 1px solid #0d8888;
+}
+
+.effect-opacity {
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+.effect-opacity:hover {
+  opacity: 0.8;
+}
+.effect-opacity:active {
+  transition: opacity 0.25s 0.1s;
+  opacity: 0.7;
+}
+
+.effect-scale {
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+.effect-scale:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.effect-scale:active {
+  transition: transform 0.25s 0.1s;
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.effect-font-color {
+  cursor: pointer;
+  color: #13c2c2;
+  transition: transform 0.25s;
+}
+.effect-font-color:hover {
+  color: #0f9b9b;
+}
+.effect-font-color:active {
+  transition: transform 0.25s 0.1s;
+  color: #0b7474;
+}
+
+.cus-p {
+  cursor: pointer;
+}
+
+.cus-na {
+  cursor: not-allowed;
 }
 
 /* --------------------- 其他 --------------------- */
