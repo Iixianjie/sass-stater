@@ -229,7 +229,6 @@ a {
   cursor: pointer;
   transition: color 0.3s;
   -webkit-text-decoration-skip: objects; // remove gaps in links underline in iOS 8+ and Safari 8+.
-  outline: $color auto 1px;
   outline-offset: -1px;
 
   &:hover {
@@ -246,6 +245,10 @@ a {
     outline: 0;
   }
 
+  &:focus {
+    outline: $color auto 1px;
+  }
+
   &[disabled] {
     color: $b-disable;
     cursor: not-allowed;
@@ -253,7 +256,7 @@ a {
   }
 
   &.__noOutline {
-    outline: none;
+    outline: none !important;
   }
 }
 
