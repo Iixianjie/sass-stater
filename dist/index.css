@@ -177,10 +177,11 @@ a {
   color: #13c2c2;
   text-decoration: none;
   background-color: transparent;
-  outline: none;
   cursor: pointer;
   transition: color 0.3s;
   -webkit-text-decoration-skip: objects;
+  outline: #13c2c2 auto 1px;
+  outline-offset: -1px;
 }
 a:hover {
   color: #36cfc9;
@@ -196,6 +197,13 @@ a[disabled] {
   color: rgba(0, 0, 0, 0.25);
   cursor: not-allowed;
   pointer-events: none;
+}
+a.__noOutline {
+  outline: none;
+}
+
+.outline:focus, [tabindex]:focus {
+  outline: #13c2c2 auto 1px;
 }
 
 pre,
@@ -739,7 +747,7 @@ mark {
   color: rgba(0, 0, 0, 0.9) !important;
 }
 
-.color-primary {
+.color-text {
   color: rgba(0, 0, 0, 0.75) !important;
 }
 
@@ -876,6 +884,36 @@ mark {
 }
 
 /* 内外边距类 */
+.m-4 {
+  margin: 4px !important;
+}
+
+.mt-4 {
+  margin-top: 4px !important;
+}
+
+.mr-4 {
+  margin-right: 4px !important;
+}
+
+.ml-4 {
+  margin-left: 4px !important;
+}
+
+.mb-4 {
+  margin-bottom: 4px !important;
+}
+
+.mtb-4 {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+.mlr-4 {
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+
 .m-8 {
   margin: 8px !important;
 }
@@ -1447,6 +1485,6 @@ mark {
     text-shadow: none;
   }
 }
-/* 根据需要引入 */
+/* ########## 根据需要引入 ########## */
 
 /*# sourceMappingURL=index.css.map */

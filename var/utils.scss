@@ -48,8 +48,9 @@
   height: $height;
 }
 
+// 以设计的尺寸的1/10计算rem值8
 @function rem($px) {
-  @return $px / $design-width * 100 + rem;
+  @return $px / $design-width * 10 + rem;
 }
 
 @function px($px) {
@@ -58,7 +59,7 @@
 
 // 元素状态背景色
 @mixin status-bg {
-  
+
   &.__red {
     background-color: $color-error;
   }
@@ -78,7 +79,7 @@
 
 // 元素状态边框色
 @mixin status-bg {
-  
+
   &.__red {
     border-color: $color-error;
   }
@@ -129,7 +130,7 @@
 
 @mixin effect-border($c: $color) {
   cursor: pointer;
-  transition: border 0.25s; 
+  transition: border 0.25s;
   border: 1px solid transparent;
 
   &:hover {
@@ -144,7 +145,7 @@
 
 @mixin effect-opacity() {
   cursor: pointer;
-  transition: opacity 0.25s; 
+  transition: opacity 0.25s;
 
   &:hover {
     opacity: 0.8;
@@ -158,7 +159,7 @@
 
 @mixin effect-scale() {
   cursor: pointer;
-  transition: transform 0.25s; 
+  transition: transform 0.25s;
 
   &:hover {
     transform: scale3d(1.1, 1.1, 1.1);
@@ -173,7 +174,7 @@
 @mixin effect-font-color($c: $color) {
   cursor: pointer;
   color: $c;
-  transition: transform 0.25s; 
+  transition: transform 0.25s;
 
 
   &:hover {

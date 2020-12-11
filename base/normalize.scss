@@ -226,10 +226,11 @@ a {
   color: $color;
   text-decoration: none;
   background-color: transparent; // remove the gray background on active links in IE 10.
-  outline: none;
   cursor: pointer;
   transition: color 0.3s;
   -webkit-text-decoration-skip: objects; // remove gaps in links underline in iOS 8+ and Safari 8+.
+  outline: $color auto 1px;
+  outline-offset: -1px;
 
   &:hover {
     color: $color-5;
@@ -250,6 +251,14 @@ a {
     cursor: not-allowed;
     pointer-events: none;
   }
+
+  &.__noOutline {
+    outline: none;
+  }
+}
+
+.outline:focus, [tabindex]:focus {
+  outline: $color auto 1px;
 }
 
 //

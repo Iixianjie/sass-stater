@@ -4,7 +4,7 @@
 
 @import "./base/util-class.scss";
 
-/* 根据需要引入 */
+/* ########## 根据需要引入 ########## */
 // 网格
 //@import "./base/grid.scss";
 
@@ -14,5 +14,5 @@
 // 对基本样式启用暗色主题
 //@import "./base/dark.scss";
 
-// 小程序等环境的normalize
+// 小程序环境的normalize
 //@import "./base/normalize-for-mini-program.scss";

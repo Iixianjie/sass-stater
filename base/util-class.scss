@@ -167,7 +167,7 @@
   color: $b-title !important;
 }
 
-.color-primary {
+.color-text {
   color: $b-primary !important;
 }
 
@@ -305,6 +305,36 @@
 }
 
 /* 内外边距类 */
+.m-4 {
+  margin: 4px !important;
+}
+
+.mt-4 {
+  margin-top: 4px !important;
+}
+
+.mr-4 {
+  margin-right: 4px !important;
+}
+
+.ml-4 {
+  margin-left: 4px !important;
+}
+
+.mb-4 {
+  margin-bottom: 4px !important;
+}
+
+.mtb-4 {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+.mlr-4 {
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+
 .m-8 {
   margin: 8px !important;
 }

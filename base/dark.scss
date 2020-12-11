@@ -29,12 +29,16 @@
     color: $w-title;
   }
 
-  .color-primary {
+  .color-text {
     color: $w-primary
   }
 
   .color-second {
     color: $w-second
+  }
+
+  .color-disabled {
+    color: $w-disable;
   }
 
   .border {
@@ -43,5 +47,21 @@
 
   .m78-stress {
     text-shadow: $stress-shadow-w;
+  }
+
+  .m78-dot {
+    background-color: $w-disable;
+  }
+
+  .m78-triangle {
+    border-left: 5px solid $w-second;
+  }
+
+  .circle-img {
+    border: 1px solid $w-border;
+  }
+
+  .border {
+    border: 1px solid $w-border;
   }
 }
