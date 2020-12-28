@@ -561,6 +561,19 @@ mark {
   visibility: hidden;
 }
 
+.m78-tile_leading {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+.m78-tile_main {
+  flex: 1;
+  overflow: hidden;
+}
+.m78-tile_trailing {
+  flex: 0 0 auto;
+  margin-left: 10px;
+}
+
 /* -------------------- 基础 -------------------- */
 /* -------------------- 颜色 --------------------- */
 /* -------------------- 文字 --------------------- */
@@ -662,6 +675,63 @@ mark {
   bottom: -3px !important;
 }
 
+/* --------------------- 颜色 --------------------- */
+.color-red {
+  color: #f5222d !important;
+}
+
+.color-orange {
+  color: #fa8c16 !important;
+}
+
+.color-yellow {
+  color: #fadb14 !important;
+}
+
+.color-green {
+  color: #52c41a !important;
+}
+
+.color-cyan {
+  color: #13c2c2 !important;
+}
+
+.color-blue {
+  color: #1890ff !important;
+}
+
+.color-purple {
+  color: #722ed1 !important;
+}
+
+.bg-red {
+  background-color: #f5222d !important;
+}
+
+.bg-orange {
+  background-color: #fa8c16 !important;
+}
+
+.bg-yellow {
+  background-color: #fadb14 !important;
+}
+
+.bg-green {
+  background-color: #52c41a !important;
+}
+
+.bg-cyan {
+  background-color: #13c2c2 !important;
+}
+
+.bg-blue {
+  background-color: #1890ff !important;
+}
+
+.bg-purple {
+  background-color: #722ed1 !important;
+}
+
 /* --------------------- 尺寸 --------------------- */
 .h-1em {
   height: 1em !important;
@@ -677,6 +747,42 @@ mark {
 
 .h-1d4em {
   height: 1.4em !important;
+}
+
+.w-fifth {
+  width: 20% !important;
+}
+
+.w-fourth {
+  width: 25% !important;
+}
+
+.w-third {
+  width: 33.3333% !important;
+}
+
+.w-half {
+  width: 50% !important;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.w-1em {
+  width: 1em !important;
+}
+
+.w-0d8em {
+  width: 0.8em !important;
+}
+
+.w-1d2em {
+  width: 1.2em !important;
+}
+
+.w-1d4em {
+  width: 1.4em !important;
 }
 
 /* --------------------- 文字 --------------------- */
